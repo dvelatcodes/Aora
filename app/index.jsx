@@ -21,9 +21,10 @@ const App = () => {
           />
           <View className="relative mt-5">
             <Text className="text-3xl text-white text-center">
-              Discover Endless Possibilities With{" "}
+              Discover Endless Possibilities With {' '}{" "}
               <Text className="text-secondary-200">Aora</Text>
             </Text>
+            <Image source={images.path} className='w-[136px] h-[15px] absolute -bottom-2 -right-8' resizeMode="contain"/>
           </View>
         </View>
       </ScrollView>
