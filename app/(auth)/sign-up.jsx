@@ -19,7 +19,7 @@ const SignUp = () => {
   return (
     <SafeAreaView className='h-full bg-primary'>
       <ScrollView >
-          <View className='w-full h- justify-center px-4 my-7'>
+          <View className='w-full h-[90vh] justify-center px-4 my-7'>
               <Image source={images.logo} resizeMode='contain' className='w-[115px] h-[35px]'/>
               <Text className='text-2xl text-white text-semibold mt-10 font-psemibold'>
                 Sign Up
@@ -28,7 +28,7 @@ const SignUp = () => {
               title='Username'
               value={form.username}
               handleChangeText={(e)=> setForm({...form, username : e})}
-              otherStyles='mt-7'
+              otherStyles='mt-10'
               />
               <FormField 
               title='Email'
