@@ -20,12 +20,15 @@ const App = () => {
             resizeMode="contain"
           />
           <View className="relative mt-5">
-            <Text className="text-3xl text-white text-center">
+            <Text className="text-3xl text-white text-center font-bold">
               Discover Endless Possibilities With {' '}{" "}
               <Text className="text-secondary-200">Aora</Text>
             </Text>
             <Image source={images.path} className='w-[136px] h-[15px] absolute -bottom-2 -right-8' resizeMode="contain"/>
           </View>
+          <Text className='text-center text-gray-100 text-sm font-pregular mt-7'>
+          Where Creativity Meets Innovation: Embark on a Journey of Limitless Exploration with Aora
+          </Text>
         </View>
       </ScrollView>
     </SafeAreaView>
