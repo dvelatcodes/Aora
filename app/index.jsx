@@ -3,6 +3,7 @@ import { StatusBar } from "expo-status-bar";
 import { Link } from "expo-router";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { images } from "../constants";
+import CustomButton from "../components/CustomButton";
 
 const App = () => {
   return (
@@ -21,14 +22,24 @@ const App = () => {
           />
           <View className="relative mt-5">
             <Text className="text-3xl text-white text-center font-bold">
-              Discover Endless Possibilities With {' '}{" "}
+              Discover Endless Possibilities With{" "}
               <Text className="text-secondary-200">Aora</Text>
             </Text>
-            <Image source={images.path} className='w-[136px] h-[15px] absolute -bottom-2 -right-8' resizeMode="contain"/>
+            <Image
+              source={images.path}
+              className="w-[136px] h-[15px] absolute -bottom-2 -right-8"
+              resizeMode="contain"
+            />
           </View>
-          <Text className='text-center text-gray-100 text-sm font-pregular mt-7'>
-          Where Creativity Meets Innovation: Embark on a Journey of Limitless Exploration with Aora
+          <Text className="text-center text-gray-100 text-sm font-pregular mt-7">
+            Where Creativity Meets Innovation: Embark on a Journey of Limitless
+            Exploration with Aora
           </Text>
+          <CustomButton
+            title="Continue With Email"
+            handlePress={() => {}}
+            containerStyles="w-full mt-7"
+          />
         </View>
       </ScrollView>
     </SafeAreaView>
