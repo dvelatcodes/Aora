@@ -5,17 +5,26 @@ import FormField from '../../components/FormField';
 import { useState } from 'react';
 import CustomButton from "../../components/CustomButton";
 import { Link } from 'expo-router';
+import {createUser} from '../../lib/appwrite'
 
 const SignUp = () => {
+
+  // user field parameters
   const [form, setForm] = useState({
     username : '',
     email : '',
     password : ''
   })
 
+  // submission loader
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const submit = ()=>{}
+  // create user
+  const submit = ()=>{
+    createUser();
+  };
+
+
   return (
     <SafeAreaView className='h-full bg-primary'>
       <ScrollView >
